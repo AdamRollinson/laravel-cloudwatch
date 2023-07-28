@@ -1,22 +1,16 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
-    "keywords": [
-        ":vendor_name",
-        "laravel",
-        ":package_slug"
-    ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "name": "adamrollinson/laravel-cloudwatch",
+    "description": "A package for cloudwatch logging intended to be used in Laravel 10",
+    "homepage": "https://github.com/adamrollinson/laravel-cloudwatch",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
-            "role": "Developer"
+            "name": "Adam Rollinson",
+            "email": "adamleerollinson@gmail.com"
         }
     ],
     "require": {
-        "php": "^8.1",
+        "php": "^8.1|^8.2",
         "spatie/laravel-package-tools": "^1.14.0",
         "illuminate/contracts": "^10.0"
     },
@@ -35,13 +29,12 @@
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src/",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories/"
+            "AdamRollinson\\Cloudwatch\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests/"
+            "AdamRollinson\\Cloudwatch\\Tests\\": "tests/"
         }
     },
     "scripts": {
@@ -61,10 +54,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "AdamRollinson\\Cloudwatch\\CloudwatchServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\Facades\\Skeleton"
+                "Cloudwatch": "AdamRollinson\\Cloudwatch\\Facades\\Cloudwatch"
             }
         }
     },
