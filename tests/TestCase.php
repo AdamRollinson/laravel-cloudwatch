@@ -2,9 +2,9 @@
 
 namespace AdamRollinson\Cloudwatch\Tests;
 
+use AdamRollinson\Cloudwatch\CloudwatchServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use AdamRollinson\Cloudwatch\CloudwatchServiceProvider;
 
 class TestCase extends Orchestra
 {
