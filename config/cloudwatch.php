@@ -11,7 +11,7 @@ return [
                         'custom_fields' => [
                             'env',
                             'app',
-                        ]
+                        ],
                     ],
                 ],
             ],
