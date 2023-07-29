@@ -1,6 +1,6 @@
 <?php
 
-namespace AdamRollinson\Cloudwatch\Tests;
+namespace AdamRollinson\Cloudwatch\Tests\Unit;
 
 use AdamRollinson\Cloudwatch\CloudwatchServiceProvider;
 use Orchestra\Testbench\TestCase as Orchestra;

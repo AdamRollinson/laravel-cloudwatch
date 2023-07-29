@@ -1,5 +1,5 @@
 <?php
 
-use AdamRollinson\Cloudwatch\Tests\TestCase;
+use AdamRollinson\Cloudwatch\Tests\Unit\TestCase as UnitTestCase;
 
-uses(TestCase::class)->in(__DIR__);
+uses(UnitTestCase::class)->in(__DIR__.'/Unit');
