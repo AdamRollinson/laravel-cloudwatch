@@ -92,10 +92,13 @@ it('can have additional log streams', function () {
         'cloudwatch.logging.logGroups.default.logStreams.test' => $testLogStreamConfig,
     ]);
 
-    expect(config('cloudwatch.logging.logGroups.default.logStreams'))
+    expect($mockTestLogStream)
+        ->toBeInstanceOf(LogStream::class)
+        ->and(config('cloudwatch.logging.logGroups.default.logStreams'))
         ->toBeArray()
         ->toHaveKey('default')
         ->toHaveKey('test');
+
 });
 
 it('can have additional log groups', function () {
@@ -120,7 +123,9 @@ it('can have additional log groups', function () {
         'cloudwatch.logging.logGroups.additional' => $additionalLogGroupConfig,
     ]);
 
-    expect(config('cloudwatch.logging.logGroups'))
+    expect($mockTestLogStream)
+        ->toBeInstanceOf(LogStream::class)
+        ->and(config('cloudwatch.logging.logGroups'))
         ->toBeArray()
         ->toHaveKey('default')
         ->toHaveKey('additional')
