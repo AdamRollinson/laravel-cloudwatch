@@ -4,7 +4,7 @@ namespace AdamRollinson\Cloudwatch\Logging\LogStreams;
 
 class DefaultLogStream extends LogStream
 {
-    protected string $logGroup = 'default';
+    public string $logGroup = 'default';
 
-    protected string $logStream = 'default';
+    public string $logStream = 'default';
 }

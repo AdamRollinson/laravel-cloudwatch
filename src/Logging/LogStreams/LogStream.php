@@ -4,9 +4,9 @@ namespace AdamRollinson\Cloudwatch\Logging\LogStreams;
 
 class LogStream
 {
-    protected string $logGroup;
+    public string $logGroup;
 
-    protected string $logStream;
+    public string $logStream;
 
     public function groupConfig(): array
     {
