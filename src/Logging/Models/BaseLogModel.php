@@ -4,11 +4,11 @@ namespace AdamRollinson\Cloudwatch\Logging\Models;
 
 use AdamRollinson\Cloudwatch\Logging\LogStreams\LogStream;
 use AdamRollinson\Cloudwatch\Models\BaseModel;
-use Illuminate\Support\Arr;
 
 class BaseLogModel extends BaseModel
 {
     public string $logGroup = 'default';
+
     public string $logStream = 'default';
 
     public function stream(): LogStream

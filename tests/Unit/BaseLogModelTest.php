@@ -62,4 +62,3 @@ it('can access stream config from stream', function () {
     expect($defaultModel->stream()->streamConfig())
         ->toBeArray();
 });
-

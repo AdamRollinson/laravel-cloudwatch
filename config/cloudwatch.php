@@ -12,7 +12,7 @@ return [
                         'custom_fields' => [
                             'environment',
                             'level',
-                            'data'
+                            'data',
                         ],
                     ],
                 ],
