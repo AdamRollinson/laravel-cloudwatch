@@ -8,9 +8,11 @@ return [
                 'logStreams' => [
                     'default' => [
                         'class' => AdamRollinson\Cloudwatch\Logging\LogStreams\DefaultLogStream::class,
+                        'model' => AdamRollinson\Cloudwatch\Logging\Models\BaseLogModel::class,
                         'custom_fields' => [
-                            'env',
-                            'app',
+                            'environment',
+                            'level',
+                            'data'
                         ],
                     ],
                 ],

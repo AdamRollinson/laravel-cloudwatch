@@ -2,11 +2,19 @@
 
 namespace AdamRollinson\Cloudwatch\Logging\LogStreams;
 
+use AdamRollinson\Cloudwatch\Logging\Models\BaseLogModel;
+use Illuminate\Support\Arr;
+
 class LogStream
 {
     public string $logGroup;
 
     public string $logStream;
+
+    public function getModel(): BaseLogModel
+    {
+        return app(Arr::get($this->streamConfig(), 'model'));
+    }
 
     public function groupConfig(): array
     {
